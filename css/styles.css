@@ -83,6 +83,8 @@ img {
 
 .header {
     border-bottom: 1px solid #E7E9FC;
+    border-bottom: 1440px;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -192,7 +194,7 @@ img {
 
 /* Title styles for different sections */
 
-.advantages-title, .examples-title, .team-title, .portfolio-title {
+.advantages-title, .examples-title, .team-title, .customers-title, .portfolio-title {
     color: var(--dark);
     font-weight: 700;
     font-size: 36px;
@@ -268,7 +270,7 @@ img {
 }
 
 .team-card {
-    padding: 32px 0;
+    padding: 32px 16px;
     text-align: center;
     background: var(--white-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -307,6 +309,7 @@ img {
 
 .portfolio-card {
     border: 1px solid var(--accent);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
     border-top: none;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -322,4 +325,94 @@ img {
 
 .portfolio-set-item {
     flex-basis: calc((100% - 24px*2) / 3);
+}
+
+/* HOMEWORK 4 - GRAPHICS */
+
+/* Тени - ДОРАБОТАТЬ */
+
+.portfolio-set-item:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+/* .portfolio-card:hover {
+    border: 0.5px solid var(--light);
+} */
+
+.overlay {
+    max-width: 1440px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/people-office1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.advantages-list-item::before {
+    display: block;
+    content: "";
+    height: 112px;
+    background: var(--light);
+    border-radius: var(--radius);
+    margin-bottom: 8px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.icon-antenna::before {
+    background-image: url(../images/antenna.svg);
+}
+
+.icon-clock::before {
+    background-image: url(../images/clock.svg);
+}
+
+.icon-diagram::before {
+    background-image: url(../images/diagram.svg);
+}
+
+.icon-astronaut::before {
+    background-image: url(../images/astronaut.svg);
+}
+
+.social-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 8px;
+}
+
+.social-list-link {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-brand);
+    border-radius: 50%;
+    
+background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-instagram {
+    background-image: url(../images/instagram.svg);
+}
+
+.icon-twitter {
+    background-image: url(../images/twitter.svg);
+}
+
+.icon-facebook {
+    background-image: url(../images/facebook.svg);
+}
+
+.icon-linkedin {
+    background-image: url(../images/linkedin.svg);
+}
+
+
+.customers {
+    padding-top: 130px;
 }
